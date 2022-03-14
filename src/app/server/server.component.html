@@ -1,0 +1,10 @@
+    <button 
+class = "btn btn-primary"
+(click)="getParagraph()"
+>Display Details</button>
+<p *ngIf="displayParagraph">Secret Password=tuna</p>
+<p *ngFor="let counter of counters"
+    [ngStyle]="{backgroundColor: getBackgroundColor(counter)}"
+    [ngClass]="{increment: counter>4}">
+        {{counters[counter]}}
+</p>
